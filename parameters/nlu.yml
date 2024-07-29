@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+- intent: query_weather
+  examples: |
+    - How's weather like in [London](city)?
+    - Tell me the weather in [New York](city) today.
+    - How's the weather in [France](country)?
+    - What's the weather like today?
+    - Can you tell me the weather forecast for tomorrow?
+    - How's the weather in [San Francisco](city)?
+    - Is it going to rain this weekend?
+    - What's the temperature right now?
+    - What's the weather going to be like next week?
+    - Do I need an umbrella today?
+    - How hot will it be in [Dubai](city) this week?
+    - Please give me the weather update for New York.
+    - Will it snow in Boston tomorrow?
+    - Is there a chance of thunderstorms later?
+    - How cold is it outside?
+    - Will it be sunny or cloudy?
+    - Are there any weather alerts for today?
+    - What's the UV index today?
+    - What’s it like weather-wise?
+    - Are we expecting a sunny day?
+    - Any idea if it's chilly today?
+    - Quick, what's the weather forecast for today?
+    - I need to know if it's safe to travel due to weather conditions.
+    - What’s the weather looking like for my flight tomorrow?
+    - Can you give me a detailed weather report?
+    - What are the expected highs and lows for this week?
+    - Tell me about the weather in the morning.
+    - If I were to go for a picnic, will the weather cooperate?
+    - Would it be too hot for a hike in Arizona?
+
+- intent: intent_fallback
+  examples: |
+    - [random text](random)
+    - I am just trying to check something
+    - help me out
+    - I’m not sure what you mean by that.
+    - Can you explain that again?
+    - I didn’t understand your last response.
+    - What do you mean by "weather updates"?
+    - I wasn't able to follow what you just said.
+    - That doesn’t make sense to me.
+    - Can you say that in another way?
+    - I'm confused about what you just mentioned.
+    - I don't understand how that relates to the weather.
+    - Can you give me an example of that?
+    - What are you trying to say?
+    - I’m lost; can you clarify?
+    - This isn't what I was looking for.
+    - I have no idea how to respond to that.
+    - That sounds complicated; can you simplify it?
+    - I don’t get what you mean.
+    - That's not what I asked about.
+    - Sorry, I didn’t catch that.
+    - Can we start over?
+    - What else can you help me with?
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,17 @@
+services:
+  rasa:
+    build:
+      context: ./
+    deploy:
+      resources:
+        limits:
+          memory: 1900M
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./parameters:/app/parameters
+      - ./models:/app/models
+    entrypoint:
+      - "/bin/bash"
+      - "/app/parameters/run.sh"
+      # - "-f"
